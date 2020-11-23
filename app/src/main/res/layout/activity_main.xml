@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-4dp"
+        android:text="IMC"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lvImc"
+        android:layout_width="match_parent"
+        android:layout_height="337dp"
+        android:layout_below="@+id/textTitulo"
+        android:layout_marginTop="7dp" />
+
+    <Button
+        android:id="@+id/btnNovo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/lvImc"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="0dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="onClickNovo"
+        android:text="Novo"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+</RelativeLayout>
